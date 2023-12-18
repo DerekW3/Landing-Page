@@ -1,5 +1,7 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -8,6 +10,7 @@ body {
 }
 
 .section-1 {
+    padding: 8px;
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
@@ -21,13 +24,52 @@ body {
 }
 
 a {
+    font-family: "Arial", sans-serif;
     font-size: 18px;
     color: #E5E7EB;
     text-decoration: none;
 }
 
 .logo {
+    font-family: "Arial", sans-serif;
     font-size: 24px;
     font-weight: bold;
+    color: #F9FAF8;
+}
+
+img {
+    border-radius: 25px;
+    width: 200px;
+    height: auto;
+}
+
+button {
+    background-color: #3882F6;
+    padding: 3px;
+    border-radius: 10px;
+    border: none;
+}
+
+.body-1 {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.body-1 .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.big-text {
+    font-size: 48px;
+    font-weight: extra-bold;
     color: #F9FAF8;
 }
