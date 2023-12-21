@@ -7,28 +7,6 @@ html, body, .container {
     height: 100%;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: stretch;
-}
-
-.section-1 {
-    padding: 18px;
-    display: flex;
-    flex-direction: column;
-    background-color: #1F2937;
-    justify-content: center;
-    flex: auto;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 a {
     font-family: "Arial", sans-serif;
     font-size: 18px;
@@ -42,13 +20,6 @@ p {
     font-family: "Arial", sans-serif;
 }
 
-.logo {
-    font-family: "Arial", sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #F9FAF8;
-}
-
 img {
     border-radius: 25px;
     width: 200px;
@@ -60,6 +31,38 @@ button {
     padding: 8px;
     border-radius: 10px;
     border: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.section-1, .section-2, .section-3, .section-4 {
+    padding: 18px;
+    display: flex;
+    flex: auto;
+}
+
+.section-1 {
+    flex-direction: column;
+    background-color: #1F2937;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
 }
 
 .body-1 {
@@ -87,13 +90,10 @@ button {
 }
 
 .section-2 {
-    padding: 18px;
-    display: flex;
     justify-content: space-around;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    flex: auto;
 }
 
 .second-title {
@@ -123,12 +123,9 @@ button {
 }
 
 .section-3 {
-    display: flex;
     background-color: #E5E7EB;
     justify-content: center;
     align-items: center;
-    padding: 18px;
-    flex: auto;
 }
 
 .container-3 {
@@ -140,6 +137,7 @@ button {
 }
 
 .container-3 .name {
+    display: block;
     align-self: flex-end;
     font-size: 24px;
     font-weight: bold;
@@ -154,11 +152,8 @@ button {
 }
 
 .section-4 {
-    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 18px;
-    flex: auto;
 }
 
 .body-3 {
@@ -172,13 +167,6 @@ button {
     text-align: center;
     width: 500px;
     height: 75px;
-}
-
-.body-3 button {
-    background-color: #3882F6;
-    padding: 8px;
-    border-radius: 10px;
-    border: 1px solid white;
 }
 
 .wrapper .header-2 {
