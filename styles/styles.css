@@ -165,6 +165,29 @@ button {
     display: flex;
     background-color: #3882F6;
     border-radius: 25px;
+    padding: 18px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 500px;
     height: 75px;
+}
+
+.body-3 button {
+    background-color: #3882F6;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.wrapper .header-2 {
+    font-size: 18px;
+    color: #E5E7EB;
+    font-family: "Arial", sans-serif;
+}
+
+.wrapper p {
+    font-size: 10px;
+    color: #1F2937;
 }
