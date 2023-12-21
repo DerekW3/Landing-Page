@@ -1,3 +1,4 @@
+/* import Roboto font and format the built-in css elements */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 
 * {
@@ -5,7 +6,7 @@
     padding: 0;
 }
 
-html, body, .container {
+html, body, .main-container {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
@@ -19,8 +20,8 @@ a {
 
 img {
     border-radius: 25px;
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
 }
 
 button {
@@ -28,13 +29,33 @@ button {
     padding: 8px;
     border-radius: 10px;
     border: none;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
-.container {
+blockquote {
+    font-size: 36px;
+    font-weight: lighter;
+    color: #1F2937;
+}
+
+span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* format the main sections and containers */
+.main-container {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     align-items: stretch;
+}
+
+.container-2, .container-3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .section-1, .section-2, .section-3, .section-4 {
@@ -43,41 +64,19 @@ button {
     flex: auto;
 }
 
-.section-1 {
-    flex-direction: column;
-    background-color: #1F2937;
-    justify-content: space-between;
-}
-
-.header {
+.body-1, .body-2, .body-3 {
     display: flex;
-    justify-content: space-between;
+    text-align: center;
     align-items: center;
+    gap: 10px;
 }
 
+/* format the different fonts */
 .logo {
     font-family: "Arial", sans-serif;
     font-size: 24px;
     font-weight: bold;
     color: #F9FAF8;
-}
-
-.body-1 {
-    display: flex;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    gap: 16px;
-}
-
-.content {
-    display: flex;
-    margin: auto;
-    width: 400px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
 }
 
 .hero-main {
@@ -91,6 +90,48 @@ button {
     color: #E5E7EB;
 }
 
+.information-header {
+    text-align: center;
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1F2937;
+}
+
+#name {
+    align-self: flex-end;
+    color: #1F2937;
+}
+
+/* format in detail the different sections */
+
+.section-1 {
+    flex-direction: column;
+    background-color: #1F2937;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body-1 {
+    justify-self: center;
+    justify-content: center;
+    text-align: start;
+    margin: auto;
+}
+
+.content {
+    display: flex;
+    margin: auto;
+    width: 400px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
 .section-2 {
     justify-content: space-around;
     flex-direction: column;
@@ -98,59 +139,26 @@ button {
     gap: 10px;
 }
 
-.second-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: extra-bold;
-    color: #1F2937;
-}
-
 .container-2 {
-    display: flex;
-    gap: 10px;
     justify-content: space-around;
-    align-items: center;
 }
 
 .body-2 {
-    display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
-    align-items: center;
-}
-
-.body-2 p {
     color: #1F2937;
 }
 
 .section-3 {
     background-color: #E5E7EB;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .container-3 {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.container-3 .name {
-    display: block;
-    align-self: flex-end;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.section-3 p {
-    max-width: 500px;
-    text-align: left;
-    font-size: 36px;
-    color: #1F2937;
-    font-weight: lighter;
 }
 
 .section-4 {
@@ -159,25 +167,14 @@ button {
 }
 
 .body-3 {
-    display: flex;
     background-color: #3882F6;
     border-radius: 25px;
     padding: 18px;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: space-evenly;
     width: 500px;
-    height: 75px;
+    height: 50px;
 }
 
-.wrapper .header-2 {
-    font-size: 18px;
-    color: #E5E7EB;
-    font-family: "Arial", sans-serif;
-}
-
-.wrapper p {
-    font-size: 10px;
-    color: #1F2937;
+.wrapper {
+    text-align: start;
 }
