@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
 
 html, body, .container {
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -12,12 +15,6 @@ a {
     font-size: 18px;
     color: #E5E7EB;
     text-decoration: none;
-}
-
-p {
-    font-size: 18px;
-    color: #E5E7EB;
-    font-family: "Arial", sans-serif;
 }
 
 img {
@@ -49,7 +46,7 @@ button {
 .section-1 {
     flex-direction: column;
     background-color: #1F2937;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header {
@@ -67,33 +64,38 @@ button {
 
 .body-1 {
     display: flex;
+    justify-self: center;
     justify-content: center;
-    gap: 16px;
     align-items: center;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin: auto;
+    gap: 16px;
 }
 
-.body-1 .content {
+.content {
     display: flex;
+    margin: auto;
+    width: 400px;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
 }
 
-.big-text {
+.hero-main {
     font-size: 48px;
     font-weight: extra-bold;
     color: #F9FAF8;
 }
 
+.hero-secondary {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
 .section-2 {
     justify-content: space-around;
     flex-direction: column;
-    gap: 10px;
     align-items: center;
+    gap: 10px;
 }
 
 .second-title {
